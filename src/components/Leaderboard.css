@@ -1,0 +1,71 @@
+.leaderboard {
+  flex: 1;
+  background-color: var(--white);
+  border: 1px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  font-size: 0.9rem;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 2rem; /* Stick to the top with a little offset */
+  max-height: 80vh; /* Set a maximum height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+}
+
+.leaderboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.leaderboard-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.leaderboard-toggle {
+  background-color: var(--light-gray);
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: 0.8rem;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.leaderboard-toggle:hover {
+  background-color: #d0d3d4;
+  color: var(--dark-gray);
+}
+
+.leaderboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leaderboard th,
+.leaderboard td {
+  padding: 0.75rem 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.leaderboard th {
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.leaderboard tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.leaderboard img {
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}

@@ -1,0 +1,29 @@
+.recipes-section {
+  padding: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+
+.recipes-list {
+  flex: 3;
+}
+
+.featured-recipes,
+.all-recipes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.all-recipes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.see-all-link {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}

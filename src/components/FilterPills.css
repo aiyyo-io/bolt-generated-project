@@ -1,0 +1,33 @@
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.filter-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  background-color: var(--light-gray);
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--box-shadow);
+}
+
+.filter-pill:hover {
+  background-color: #d0d3d4;
+  color: var(--dark-gray);
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+.filter-pill.active {
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-shadow: 0 0.3rem 0.75rem rgba(0, 0, 0, 0.15);
+}
